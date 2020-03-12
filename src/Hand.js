@@ -27,6 +27,7 @@ function Hand(props) {
 }
 
 function sort (hand) {
+    // order the cards based on weighted value
     const temp = hand.toString();
     const ace_hi = temp.includes('A') 
         ? (temp.includes('2') && temp.includes('3') && temp.includes('4') && temp.includes('5'))
